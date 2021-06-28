@@ -1,0 +1,9 @@
+{
+  "Menu": {
+      "name": "string",
+      "slug": "string",
+      "published": "boolean",
+      "createdAt": "date",
+      "children": "Menu"
+  }
+}
