@@ -1,0 +1,16 @@
+{
+  "name": "fakeapp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "faker": "^5.5.3",
+    "fs-extra": "^10.0.0",
+    "fs-finder": "^1.8.1",
+    "json-concat": "^0.0.1",
+    "json-server": "^0.16.3",
+    "json-server-extension": "^1.1.2",
+    "lodash": "^4.17.21",
+    "require-dir": "^1.2.0"
+  }
+}

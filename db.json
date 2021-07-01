@@ -1,11 +1,121 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "hello"
-      }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
-  }
+	"templates": [
+		{
+			"id": 1,
+			"category": "구매",
+			"title": "구매완료 안내",
+			"content": "[#{SENDER}] 구매완료 안내\n\n구매내역을 안내 드립니다.\n\n- 예약번호: #{예약번호}",
+			"templateButtons": [
+				{
+					"name": "예약정보 바로가기",
+					"url": "#{URL}"
+				}
+			],
+			"variableHints": [
+				{
+					"variable": "SENDER",
+					"hint": "JINAIR"
+				},
+				{
+					"variable": "예약번호",
+					"hint": "QWERTY"
+				},
+				{
+					"variable": "URL",
+					"hint": "https://example.com/foo/bar"
+				}
+			],
+			"templateReferences": [
+				{
+					"infobip": "1000004180_99999"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"category": "공지",
+			"title": "지연 안내",
+			"content": "[#{SENDER}] 항공기 지연 안내\n\n항공기 지연으로 안내 드립니다.\n\n- 항공편: #{FLIGHT}\n- 여정: #{ROUTE}\n- 예약번호: #{예약번호}\n- 변경: #{BEFORE} -> #{AFTER}",
+			"templateButtons": [
+				{
+					"name": "예약정보 바로가기",
+					"url": "#{URL}"
+				}
+			],
+			"variableHints": [
+				{
+					"variable": "SENDER",
+					"hint": "JINAIR"
+				},
+				{
+					"variable": "FLIGHT",
+					"hint": "LJ123"
+				},
+				{
+					"variable": "ROUTE",
+					"hint": "GMP-CJU / 01JUL21"
+				},
+				{
+					"variable": "예약번호",
+					"hint": "QWERTY"
+				},
+				{
+					"variable": "BEFORE",
+					"hint": "10:30"
+				},
+				{
+					"variable": "AFTER",
+					"hint": "11:00"
+				},
+				{
+					"variable": "URL",
+					"hint": "https://example.com/foo/bar"
+				}
+			],
+			"templateReferences": [
+				{
+					"infobip": "1000004180_99998"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"category": "공지",
+			"title": "결항 안내",
+			"content": "[#{SENDER}] 항공기 결항 안내\n\n항공기 결항으로 안내 드립니다.\n\n- 항공편: #{FLIGHT}\n- 여정: #{ROUTE}\n- 예약번호: #{예약번호}",
+			"templateButtons": [
+				{
+					"name": "예약정보 바로가기",
+					"url": "#{URL}"
+				}
+			],
+			"variableHints": [
+				{
+					"variable": "SENDER",
+					"hint": "JINAIR"
+				},
+				{
+					"variable": "FLIGHT",
+					"hint": "LJ123"
+				},
+				{
+					"variable": "ROUTE",
+					"hint": "GMP-CJU / 01JUL21"
+				},
+				{
+					"variable": "예약번호",
+					"hint": "QWERTY"
+				},
+				{
+					"variable": "URL",
+					"hint": "https://example.com/foo/bar"
+				}
+			],
+			"templateReferences": [
+				{
+					"infobip": "1000004180_99997"
+				}
+			]
+		}
+	]
+}

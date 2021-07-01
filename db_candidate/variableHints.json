@@ -1,0 +1,20 @@
+{
+  "variableHints": [
+    {
+      "variable": "SENDER",
+      "hint": "JINAIR"
+    },
+    {
+      "variable": "예약번호",
+      "hint": "QWERTY"
+    },
+    {
+      "variable": "URL",
+      "hint": "https://example.com/foo/bar"
+    },
+    {
+      "variable": "여정",
+      "hint": "김포(GMP) - 제주(CJU) / 01JUL21 10:30"
+    }
+  ]
+}
