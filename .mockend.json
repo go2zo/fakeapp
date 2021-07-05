@@ -5,5 +5,30 @@
     "published": "boolean",
     "createdAt": "date",
     "children": "Menu"
+  },
+  "Template": {
+    "title": "string",
+    "category": "string",
+    "content": "string",
+    "createdAt": "date",
+    "createdBy": "string",
+    "modifiedAt": "date",
+    "modifiedBy": "string",
+    "templateButton": "TemplateButton[]",
+    "variableHint": "VariableHint[]",
+    "templateReference": "TemplateReference[]"
+  },
+  "TemplateButton": {
+    "sequence": "int",
+    "name": "string",
+    "url": "string"
+  },
+  "VariableHint": {
+    "variable": "string",
+    "hint": "string"
+  },
+  "TemplateReference": {
+    "reference": "string",
+    "value": "string"
   }
 }
