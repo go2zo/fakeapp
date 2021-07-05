@@ -21,7 +21,8 @@ module.exports = () => {
         content: content,
         variableHints: variableHints,
       }
-    })
+    }),
+    users: []
   }
 }
 
