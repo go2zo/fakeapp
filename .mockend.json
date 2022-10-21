@@ -1,34 +1,21 @@
 {
-  "Menu": {
-    "name": "string",
-    "slug": "string",
-    "published": "boolean",
-    "createdAt": "date",
-    "children": "Menu"
+  "Job": {
+    "id": { "int": { "min": 1, "max": 1000 } },
+    "title": { "loremWord": {} },
+    "description": { "loremSentences": { "minLength": 50, "maxLength": 200 } },
+    "schedule": {
+      "string": [
+        "0 0 */2 * * *",
+        "0 10 0 * * *",
+        "0 0 7 * * 1,4",
+        "0 0 0 3 * *"
+      ]
+    },
+    "task": { "belongsTo": "Task" }
   },
-  "Template": {
-    "title": "string",
-    "category": "string",
-    "content": "string",
-    "createdAt": "date",
-    "createdBy": "string",
-    "modifiedAt": "date",
-    "modifiedBy": "string",
-    "templateButton": "TemplateButton[]",
-    "variableHint": "VariableHint[]",
-    "templateReference": "TemplateReference[]"
-  },
-  "TemplateButton": {
-    "sequence": "int",
-    "name": "string",
-    "url": "string"
-  },
-  "VariableHint": {
-    "variable": "string",
-    "hint": "string"
-  },
-  "TemplateReference": {
-    "reference": "string",
-    "value": "string"
+  "Task": {
+    "id": { "int": { "min": 1, "max": 10 } },
+    "title": { "loremWord": {} },
+    "description": { "loremSentences": { "minLength": 50, "maxLength": 200 } }
   }
 }
