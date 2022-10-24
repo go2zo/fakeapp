@@ -11,11 +11,19 @@
         "0 0 0 3 * *"
       ]
     },
-    "task": { "belongsTo": "Task" }
+    "task": { "belongsTo": "Task" },
+    "notifications": { "hasMany": "Sms" },
+    "emails": { "hasMany": "Email" }
   },
   "Task": {
     "id": { "int": { "min": 1, "max": 10 } },
     "title": { "loremWord": {} },
     "description": { "loremSentences": { "minLength": 50, "maxLength": 200 } }
+  },
+  "Sms": {
+    "phoneNumber": { "regexp": "010-[1-9][0-9]{3}-[0-9]{4}" }
+  },
+  "Email": {
+    "address": { "regexp": "[a-z]{5,10}@[a-z]{5}(\\.[a-z]{2,3}){1,2}" }
   }
 }
